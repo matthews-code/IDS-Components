@@ -1,0 +1,37 @@
+[
+    {
+        "description": "101",
+        "ledger": "CORE",
+        "price": "12.99"
+    },
+    {
+        "description": "102",
+        "ledger": "CORE",
+        "price": "13.99"
+    },
+    {
+        "description": "103",
+        "ledger": "CORE",
+        "price": "1.21"
+    },
+    {
+        "description": "104",
+        "ledger": "CORE",
+        "price": "1.21"
+    },
+    {
+        "description": "105",
+        "ledger": "CORE",
+        "price": "15.99"
+    },
+    {
+        "description": "106",
+        "ledger": "CORE",
+        "price": "1.21"
+    },
+    {
+        "description": "107",
+        "ledger": "CORE",
+        "price": "200.10"
+    }
+]

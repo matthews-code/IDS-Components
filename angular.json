@@ -22,7 +22,17 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/ids-enterprise-wc/locale-data",
+                "output": "/locale-data"
+              },
+              {
+                "glob": "**/*",
+                "input": "./node_modules/ids-enterprise-wc/themes",
+                "output": "themes"
+              }
             ],
             "styles": [
               "src/styles.css"
@@ -84,7 +94,17 @@
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/ids-enterprise-wc/locale-data",
+                "output": "/locale-data"
+              },
+              {
+                "glob": "**/*",
+                "input": "./node_modules/ids-enterprise-wc/themes",
+                "output": "themes"
+              }
             ],
             "styles": [
               "src/styles.css"
