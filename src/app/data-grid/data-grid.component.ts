@@ -1,8 +1,7 @@
 import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import type IdsDataGrid from 'ids-enterprise-wc/components/ids-data-grid/ids-data-grid';
 import type { IdsDataGridColumn } from 'ids-enterprise-wc/components/ids-data-grid/ids-data-grid-column';
-import booksJSON from './books.json';
-// import '../ids-data-grid';
+import sampleData from './sample-data.json';
 
 @Component({
   selector: 'app-data-grid',
@@ -13,65 +12,83 @@ export class DataGridComponent implements AfterViewInit {
   constructor() {}
 
   @ViewChild('dataGridEditable') dataGrid!: ElementRef<IdsDataGrid>;
-  // @ViewChild('pageContainer') pageContainer!: ElementRef;
   columns: IdsDataGridColumn[] = [];
 
   ngAfterViewInit(): void {
     this.columns.push({
-      id: 'selectionCheckbox',
-      name: 'selection',
-      sortable: false,
-      resizable: false,
-      formatter: this.dataGrid.nativeElement.formatters.selectionCheckbox,
-      align: 'center',
-    });
-    this.columns.push({
-      id: 'rowNumber',
-      name: '#',
-      formatter: this.dataGrid.nativeElement.formatters.rowNumber,
-      sortable: false,
-      resizable: true,
-      reorderable: true,
-      readonly: true,
-      width: 65,
-    });
-    this.columns.push({
-      id: 'description',
-      name: 'Description',
-      field: 'description',
+      id: 'create',
+      name: '',
+      field: 'create',
       sortable: true,
       resizable: true,
       reorderable: true,
       formatter: this.dataGrid.nativeElement.formatters.text,
-      editor: {
-        type: 'input',
-        inline: true,
-        editorSettings: {
-          autoselect: true,
-          dirtyTracker: true,
-        },
-      },
+      // editor: {
+      //   type: 'input',
+      //   inline: true,
+      //   editorSettings: {
+      //     autoselect: true,
+      //     dirtyTracker: true,
+      //   },
+      // },
     });
     this.columns.push({
-      id: 'ledger',
-      name: 'Ledger',
-      field: 'ledger',
+      id: 'status',
+      name: '',
+      field: 'status',
+      resizable: true,
+      reorderable: true,
+      cssPart: (row: number) => (row < 4 || row > 4 ? 'custom-cell' : ''),
+      formatter: this.dataGrid.nativeElement.formatters.text,
+    });
+    this.columns.push({
+      id: 'enterpriseGroup',
+      name: 'EnterpriseGroup',
+      field: 'enterpriseGroup',
       resizable: true,
       reorderable: true,
       formatter: this.dataGrid.nativeElement.formatters.text,
     });
     this.columns.push({
-      id: 'price',
-      name: 'Price',
-      field: 'price',
+      id: 'busClassA',
+      name: 'BusClassA',
+      field: 'busClassA',
       resizable: true,
       reorderable: true,
-      formatter: this.dataGrid.nativeElement.formatters.decimal,
-      formatOptions: { locale: 'en-US' }, // Data Values are in en-US
+      formatter: this.dataGrid.nativeElement.formatters.text,
+    });
+    this.columns.push({
+      id: 'groupFieldB',
+      name: 'GroupFieldB',
+      field: 'groupFieldB',
+      resizable: true,
+      reorderable: true,
+      formatter: this.dataGrid.nativeElement.formatters.text,
+    });
+    this.columns.push({
+      id: 'parentGroupFieldB',
+      name: 'ParentGroupFieldB',
+      field: 'parentGroupFieldB',
+      resizable: true,
+      reorderable: true,
+      formatter: this.dataGrid.nativeElement.formatters.text,
+    });
+    this.columns.push({
+      id: 'name',
+      name: 'Name',
+      field: 'name',
+      resizable: true,
+      reorderable: true,
+      formatter: this.dataGrid.nativeElement.formatters.text,
     });
 
+    // this.dataGrid.nativeElement.rowSelection = 'multiple';
+    // this.dataGrid.nativeElement.suppressRowClickSelection = 'true';
+    // this.dataGrid.nativeElement.suppressRowClickSelection = 'true';
     // this.dataGrid.nativeElement.rowHeight = 'xs';
+    // this.dataGrid.nativeElement.editable = true;
+
     this.dataGrid.nativeElement.columns = this.columns;
-    this.dataGrid.nativeElement.data = booksJSON;
+    this.dataGrid.nativeElement.data = sampleData;
   }
 }

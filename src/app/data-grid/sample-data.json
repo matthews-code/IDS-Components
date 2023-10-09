@@ -1,0 +1,79 @@
+[
+    {
+        "create": "Create",
+        "status": "",
+        "enterpriseGroup": "1000",
+        "busClassA": "1100",
+        "groupFieldB": "1110",
+        "parentGroupFieldB": "",
+        "name": "R&D"
+    },
+    {
+        "create": "Create",
+        "status": "",
+        "enterpriseGroup": "1000",
+        "busClassA": "1100",
+        "groupFieldB": "1120",
+        "parentGroupFieldB": "1110",
+        "name": "Development"
+    },
+    {
+        "create": "Create",
+        "status": "",
+        "enterpriseGroup": "1000",
+        "busClassA": "1100",
+        "groupFieldB": "1130",
+        "parentGroupFieldB": "1120",
+        "name": "HR"
+    },
+    {
+        "create": "Create",
+        "status": "",
+        "enterpriseGroup": "1000",
+        "busClassA": "1100",
+        "groupFieldB": "1140",
+        "parentGroupFieldB": "1130",
+        "name": "IS"
+    },
+    {
+        "create": "",
+        "status": "",
+        "enterpriseGroup": ""
+    },
+    {
+        "create": "Create",
+        "status": "",
+        "enterpriseGroup": "1000",
+        "busClassA": "1200",
+        "groupFieldB": "1210",
+        "parentGroupFieldB": "",
+        "name": "R&D"
+    },
+    {
+        "create": "Create",
+        "status": "",
+        "enterpriseGroup": "1000",
+        "busClassA": "1200",
+        "groupFieldB": "1220",
+        "parentGroupFieldB": "1210",
+        "name": "Development"
+    },
+    {
+        "create": "Create",
+        "status": "",
+        "enterpriseGroup": "2000",
+        "busClassA": "1200",
+        "groupFieldB": "1230",
+        "parentGroupFieldB": "1220",
+        "name": "HR"
+    },
+    {
+        "create": "Create",
+        "status": "",
+        "enterpriseGroup": "2000",
+        "busClassA": "1200",
+        "groupFieldB": "1240",
+        "parentGroupFieldB": "1230",
+        "name": "IS"
+    }
+]

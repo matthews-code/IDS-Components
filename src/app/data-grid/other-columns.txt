@@ -1,0 +1,18 @@
+    this.columns.push({
+       id: 'selectionCheckbox',
+       name: 'selection',
+       sortable: false,
+       resizable: false,
+       formatter: this.dataGrid.nativeElement.formatters.selectionCheckbox,
+       align: 'center',
+     });
+     this.columns.push({
+       id: 'rowNumber',
+       name: '#',
+       formatter: this.dataGrid.nativeElement.formatters.rowNumber,
+       sortable: false,
+       resizable: true,
+       reorderable: true,
+       readonly: true,
+       width: 65,
+     });
