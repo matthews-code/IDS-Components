@@ -16,6 +16,14 @@ export class DataGridComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     this.columns.push({
+      id: 'selectionCheckbox',
+      name: 'selection',
+      sortable: false,
+      resizable: false,
+      formatter: this.dataGrid.nativeElement.formatters.selectionCheckbox,
+      align: 'center',
+    });
+    this.columns.push({
       id: 'create',
       name: '',
       field: 'create',
@@ -23,15 +31,16 @@ export class DataGridComponent implements AfterViewInit {
       resizable: true,
       reorderable: true,
       formatter: this.dataGrid.nativeElement.formatters.text,
-      // editor: {
-      //   type: 'input',
-      //   inline: true,
-      //   editorSettings: {
-      //     autoselect: true,
-      //     dirtyTracker: true,
-      //   },
-      // },
+      editor: {
+        type: 'input',
+        inline: true,
+        editorSettings: {
+          autoselect: true,
+          dirtyTracker: true,
+        },
+      },
     });
+
     this.columns.push({
       id: 'status',
       name: '',
@@ -41,14 +50,16 @@ export class DataGridComponent implements AfterViewInit {
       cssPart: (row: number) => (row < 4 || row > 4 ? 'custom-cell' : ''),
       formatter: this.dataGrid.nativeElement.formatters.text,
     });
+
     this.columns.push({
       id: 'enterpriseGroup',
       name: 'EnterpriseGroup',
       field: 'enterpriseGroup',
       resizable: true,
       reorderable: true,
-      formatter: this.dataGrid.nativeElement.formatters.text,
+      formatter: this.dataGrid.nativeElement.formatters.integer,
     });
+
     this.columns.push({
       id: 'busClassA',
       name: 'BusClassA',
@@ -57,6 +68,7 @@ export class DataGridComponent implements AfterViewInit {
       reorderable: true,
       formatter: this.dataGrid.nativeElement.formatters.text,
     });
+
     this.columns.push({
       id: 'groupFieldB',
       name: 'GroupFieldB',
@@ -81,12 +93,19 @@ export class DataGridComponent implements AfterViewInit {
       reorderable: true,
       formatter: this.dataGrid.nativeElement.formatters.text,
     });
+    // this.columns.push({
+    //   id: '',
+    //   name: '',
+    //   field: '',
+    //   resizable: true,
+    //   reorderable: true,
+    //   formatter: this.dataGrid.nativeElement.formatters.text,
+    // });
 
-    // this.dataGrid.nativeElement.rowSelection = 'multiple';
-    // this.dataGrid.nativeElement.suppressRowClickSelection = 'true';
-    // this.dataGrid.nativeElement.suppressRowClickSelection = 'true';
-    // this.dataGrid.nativeElement.rowHeight = 'xs';
-    // this.dataGrid.nativeElement.editable = true;
+    this.dataGrid.nativeElement.editable = true;
+    this.dataGrid.nativeElement.rowHeight = 'sm';
+    this.dataGrid.nativeElement.suppressRowClickSelection = true;
+    this.dataGrid.nativeElement.rowSelection = 'multiple';
 
     this.dataGrid.nativeElement.columns = this.columns;
     this.dataGrid.nativeElement.data = sampleData;
