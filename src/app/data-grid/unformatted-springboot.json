@@ -1,0 +1,609 @@
+{
+    "id": "3",
+    "name": "BusClassA",
+    "rows": [
+        {
+            "id": "1",
+            "uniqueId": "R_1386575753597",
+            "cells": [
+                {
+                    "id": "1",
+                    "displayValue": "// TO RUN...",
+                    "rawValue": "// TO RUN...",
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "uniqueId": "R_1386575753598",
+            "cells": [
+                {
+                    "id": "1",
+                    "displayValue": "//bltest -lDATA_LEAVE_ALL -f editableCube_data [BusClassA] snipstart",
+                    "rawValue": "//bltest -lDATA_LEAVE_ALL -f editableCube_data [BusClassA] snipstart",
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "uniqueId": "R_1386579695869",
+            "cells": [
+                {
+                    "id": "1",
+                    "displayValue": "context",
+                    "rawValue": "context",
+                    "comment": ""
+                },
+                {
+                    "id": "2",
+                    "displayValue": "context.actor",
+                    "rawValue": "context.actor",
+                    "comment": ""
+                },
+                {
+                    "id": "3",
+                    "displayValue": "default",
+                    "rawValue": "default",
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "uniqueId": "R_1386579695870",
+            "cells": [
+                {
+                    "id": "1",
+                    "displayValue": "context",
+                    "rawValue": "context",
+                    "comment": ""
+                },
+                {
+                    "id": "2",
+                    "displayValue": "context.current.date",
+                    "rawValue": "context.current.date",
+                    "comment": ""
+                },
+                {
+                    "id": "3",
+                    "displayValue": "default",
+                    "rawValue": "default",
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "uniqueId": "R_1386579695871",
+            "cells": [
+                {
+                    "id": "1",
+                    "displayValue": "context",
+                    "rawValue": "context",
+                    "comment": ""
+                },
+                {
+                    "id": "2",
+                    "displayValue": "context.isbatch",
+                    "rawValue": "context.isbatch",
+                    "comment": ""
+                },
+                {
+                    "id": "3",
+                    "displayValue": "default",
+                    "rawValue": "default",
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "uniqueId": "R_1386579695866",
+            "cells": [
+                {
+                    "id": "1",
+                    "displayValue": "context",
+                    "rawValue": "context",
+                    "comment": ""
+                },
+                {
+                    "id": "2",
+                    "displayValue": "context.asofdate",
+                    "rawValue": "context.asofdate",
+                    "comment": ""
+                },
+                {
+                    "id": "3",
+                    "displayValue": "default",
+                    "rawValue": "default",
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "id": "7",
+            "uniqueId": "R_1386575753599",
+            "cells": [
+                {
+                    "id": "1",
+                    "displayValue": "// Bank",
+                    "rawValue": "// Bank",
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "id": "8",
+            "uniqueId": "R_1386575753600",
+            "cells": [
+                {
+                    "id": "1",
+                    "displayValue": "BusClassA",
+                    "rawValue": "BusClassA",
+                    "comment": ""
+                },
+                {
+                    "id": "2",
+                    "displayValue": "",
+                    "rawValue": "",
+                    "comment": ""
+                },
+                {
+                    "id": "3",
+                    "displayValue": "",
+                    "rawValue": "",
+                    "comment": ""
+                },
+                {
+                    "id": "4",
+                    "displayValue": "EnterpriseGroup",
+                    "rawValue": "EnterpriseGroup",
+                    "comment": ""
+                },
+                {
+                    "id": "5",
+                    "displayValue": "BusClassA",
+                    "rawValue": "BusClassA",
+                    "comment": ""
+                },
+                {
+                    "id": "6",
+                    "displayValue": "Name",
+                    "rawValue": "Name",
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "id": "9",
+            "uniqueId": "R_1386579707415",
+            "cells": [
+                {
+                    "id": "1",
+                    "displayValue": "",
+                    "rawValue": "",
+                    "comment": ""
+                },
+                {
+                    "id": "2",
+                    "displayValue": "Create",
+                    "rawValue": "Create",
+                    "comment": ""
+                },
+                {
+                    "id": "3",
+                    "displayValue": "",
+                    "rawValue": "",
+                    "comment": ""
+                },
+                {
+                    "id": "4",
+                    "displayValue": "1000",
+                    "rawValue": "1000",
+                    "comment": ""
+                },
+                {
+                    "id": "5",
+                    "displayValue": "1100",
+                    "rawValue": "1100",
+                    "comment": ""
+                },
+                {
+                    "id": "6",
+                    "displayValue": "Wells Fargo",
+                    "rawValue": "Wells Fargo",
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "id": "10",
+            "uniqueId": "R_1386579707416",
+            "cells": [
+                {
+                    "id": "1",
+                    "displayValue": "",
+                    "rawValue": "",
+                    "comment": ""
+                },
+                {
+                    "id": "2",
+                    "displayValue": "Create",
+                    "rawValue": "Create",
+                    "comment": ""
+                },
+                {
+                    "id": "3",
+                    "displayValue": "",
+                    "rawValue": "",
+                    "comment": ""
+                },
+                {
+                    "id": "4",
+                    "displayValue": "1000",
+                    "rawValue": "1000",
+                    "comment": ""
+                },
+                {
+                    "id": "5",
+                    "displayValue": "1200",
+                    "rawValue": "1200",
+                    "comment": ""
+                },
+                {
+                    "id": "6",
+                    "displayValue": "BOA",
+                    "rawValue": "BOA",
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "id": "11",
+            "uniqueId": "R_1386579707417",
+            "cells": [
+                {
+                    "id": "1",
+                    "displayValue": "",
+                    "rawValue": "",
+                    "comment": ""
+                },
+                {
+                    "id": "2",
+                    "displayValue": "Create",
+                    "rawValue": "Create",
+                    "comment": ""
+                },
+                {
+                    "id": "3",
+                    "displayValue": "",
+                    "rawValue": "",
+                    "comment": ""
+                },
+                {
+                    "id": "4",
+                    "displayValue": "1000",
+                    "rawValue": "1000",
+                    "comment": ""
+                },
+                {
+                    "id": "5",
+                    "displayValue": "1300",
+                    "rawValue": "1300",
+                    "comment": ""
+                },
+                {
+                    "id": "6",
+                    "displayValue": "TCF",
+                    "rawValue": "TCF",
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "id": "12",
+            "uniqueId": "R_1386579707418",
+            "cells": []
+        },
+        {
+            "id": "13",
+            "uniqueId": "R_1386579707419",
+            "cells": [
+                {
+                    "id": "1",
+                    "displayValue": "",
+                    "rawValue": "",
+                    "comment": ""
+                },
+                {
+                    "id": "2",
+                    "displayValue": "Create",
+                    "rawValue": "Create",
+                    "comment": ""
+                },
+                {
+                    "id": "3",
+                    "displayValue": "",
+                    "rawValue": "",
+                    "comment": ""
+                },
+                {
+                    "id": "4",
+                    "displayValue": "2000",
+                    "rawValue": "2000",
+                    "comment": ""
+                },
+                {
+                    "id": "5",
+                    "displayValue": "2100",
+                    "rawValue": "2100",
+                    "comment": ""
+                },
+                {
+                    "id": "6",
+                    "displayValue": "Wells Fargo",
+                    "rawValue": "Wells Fargo",
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "id": "14",
+            "uniqueId": "R_1386579707420",
+            "cells": [
+                {
+                    "id": "1",
+                    "displayValue": "",
+                    "rawValue": "",
+                    "comment": ""
+                },
+                {
+                    "id": "2",
+                    "displayValue": "Create",
+                    "rawValue": "Create",
+                    "comment": ""
+                },
+                {
+                    "id": "3",
+                    "displayValue": "",
+                    "rawValue": "",
+                    "comment": ""
+                },
+                {
+                    "id": "4",
+                    "displayValue": "2000",
+                    "rawValue": "2000",
+                    "comment": ""
+                },
+                {
+                    "id": "5",
+                    "displayValue": "2200",
+                    "rawValue": "2200",
+                    "comment": ""
+                },
+                {
+                    "id": "6",
+                    "displayValue": "BOA",
+                    "rawValue": "BOA",
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "id": "15",
+            "uniqueId": "R_1386579707421",
+            "cells": [
+                {
+                    "id": "1",
+                    "displayValue": "",
+                    "rawValue": "",
+                    "comment": ""
+                },
+                {
+                    "id": "2",
+                    "displayValue": "Create",
+                    "rawValue": "Create",
+                    "comment": ""
+                },
+                {
+                    "id": "3",
+                    "displayValue": "",
+                    "rawValue": "",
+                    "comment": ""
+                },
+                {
+                    "id": "4",
+                    "displayValue": "2000",
+                    "rawValue": "2000",
+                    "comment": ""
+                },
+                {
+                    "id": "5",
+                    "displayValue": "2300",
+                    "rawValue": "2300",
+                    "comment": ""
+                },
+                {
+                    "id": "6",
+                    "displayValue": "TCF",
+                    "rawValue": "TCF",
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "id": "16",
+            "uniqueId": "R_1386579707422",
+            "cells": []
+        },
+        {
+            "id": "17",
+            "uniqueId": "R_1386579707423",
+            "cells": [
+                {
+                    "id": "1",
+                    "displayValue": "",
+                    "rawValue": "",
+                    "comment": ""
+                },
+                {
+                    "id": "2",
+                    "displayValue": "Create",
+                    "rawValue": "Create",
+                    "comment": ""
+                },
+                {
+                    "id": "3",
+                    "displayValue": "",
+                    "rawValue": "",
+                    "comment": ""
+                },
+                {
+                    "id": "4",
+                    "displayValue": "3000",
+                    "rawValue": "3000",
+                    "comment": ""
+                },
+                {
+                    "id": "5",
+                    "displayValue": "3100",
+                    "rawValue": "3100",
+                    "comment": ""
+                },
+                {
+                    "id": "6",
+                    "displayValue": "Wells Fargo",
+                    "rawValue": "Wells Fargo",
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "id": "18",
+            "uniqueId": "R_1386579707424",
+            "cells": [
+                {
+                    "id": "1",
+                    "displayValue": "",
+                    "rawValue": "",
+                    "comment": ""
+                },
+                {
+                    "id": "2",
+                    "displayValue": "Create",
+                    "rawValue": "Create",
+                    "comment": ""
+                },
+                {
+                    "id": "3",
+                    "displayValue": "",
+                    "rawValue": "",
+                    "comment": ""
+                },
+                {
+                    "id": "4",
+                    "displayValue": "3000",
+                    "rawValue": "3000",
+                    "comment": ""
+                },
+                {
+                    "id": "5",
+                    "displayValue": "3200",
+                    "rawValue": "3200",
+                    "comment": ""
+                },
+                {
+                    "id": "6",
+                    "displayValue": "BOA",
+                    "rawValue": "BOA",
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "id": "19",
+            "uniqueId": "R_1386579707425",
+            "cells": [
+                {
+                    "id": "1",
+                    "displayValue": "",
+                    "rawValue": "",
+                    "comment": ""
+                },
+                {
+                    "id": "2",
+                    "displayValue": "Create",
+                    "rawValue": "Create",
+                    "comment": ""
+                },
+                {
+                    "id": "3",
+                    "displayValue": "",
+                    "rawValue": "",
+                    "comment": ""
+                },
+                {
+                    "id": "4",
+                    "displayValue": "3000",
+                    "rawValue": "3000",
+                    "comment": ""
+                },
+                {
+                    "id": "5",
+                    "displayValue": "3300",
+                    "rawValue": "3300",
+                    "comment": ""
+                },
+                {
+                    "id": "6",
+                    "displayValue": "TCF",
+                    "rawValue": "TCF",
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "id": "20",
+            "uniqueId": "R_1386579707426",
+            "cells": []
+        },
+        {
+            "id": "21",
+            "uniqueId": "R_1386575753886",
+            "cells": [
+                {
+                    "id": "1",
+                    "displayValue": "//End of sheet BusClassA",
+                    "rawValue": "//End of sheet BusClassA",
+                    "comment": ""
+                },
+                {
+                    "id": "2",
+                    "displayValue": "//--",
+                    "rawValue": "//--",
+                    "comment": ""
+                },
+                {
+                    "id": "3",
+                    "displayValue": "//--",
+                    "rawValue": "//--",
+                    "comment": ""
+                },
+                {
+                    "id": "4",
+                    "displayValue": "//--",
+                    "rawValue": "//--",
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "id": "22",
+            "uniqueId": "R_1386575783729",
+            "cells": []
+        }
+    ],
+    "maxColumn": 6
+}

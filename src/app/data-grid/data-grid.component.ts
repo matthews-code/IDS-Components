@@ -14,6 +14,8 @@ export class DataGridComponent implements AfterViewInit {
   @ViewChild('dataGridEditable') dataGrid!: ElementRef<IdsDataGrid>;
   columns: IdsDataGridColumn[] = [];
 
+  // get sheet data from endpoint here
+
   ngAfterViewInit(): void {
     this.columns.push({
       id: 'selectionCheckbox',
