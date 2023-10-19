@@ -1,34 +1,10 @@
 {
-    "id": "3",
-    "name": "BusClassA",
+    "id": "1",
+    "name": "BasicCrudTestForGameHappyPath",
     "rows": [
         {
             "id": "1",
-            "uniqueId": "R_1386575753597",
-            "cells": [
-                {
-                    "id": "1",
-                    "displayValue": "// TO RUN...",
-                    "rawValue": "// TO RUN...",
-                    "comment": ""
-                }
-            ]
-        },
-        {
-            "id": "2",
-            "uniqueId": "R_1386575753598",
-            "cells": [
-                {
-                    "id": "1",
-                    "displayValue": "//bltest -lDATA_LEAVE_ALL -f editableCube_data [BusClassA] snipstart",
-                    "rawValue": "//bltest -lDATA_LEAVE_ALL -f editableCube_data [BusClassA] snipstart",
-                    "comment": ""
-                }
-            ]
-        },
-        {
-            "id": "3",
-            "uniqueId": "R_1386579695869",
+            "uniqueId": "R_1679495171261",
             "cells": [
                 {
                     "id": "1",
@@ -48,106 +24,252 @@
                     "rawValue": "default",
                     "comment": ""
                 }
-            ]
+            ],
+            "rowType": "context",
+            "businessObjectName": ""
+        },
+        {
+            "id": "2",
+            "uniqueId": "R_1680227592283",
+            "cells": [
+                {
+                    "id": "1",
+                    "displayValue": "exec",
+                    "rawValue": "exec",
+                    "comment": "clear data of the product line"
+                },
+                {
+                    "id": "2",
+                    "displayValue": "dbdeletedata.bat",
+                    "rawValue": "dbdeletedata.bat",
+                    "comment": ""
+                },
+                {
+                    "id": "3",
+                    "displayValue": "%LAENVDIR%/bin",
+                    "rawValue": "%LAENVDIR%/bin",
+                    "comment": ""
+                },
+                {
+                    "id": "4",
+                    "displayValue": "lisp -Y",
+                    "rawValue": "lisp -Y",
+                    "comment": ""
+                }
+            ],
+            "rowType": "exec",
+            "businessObjectName": ""
+        },
+        {
+            "id": "3",
+            "uniqueId": "R_1682485088389",
+            "cells": [
+                {
+                    "id": "1",
+                    "displayValue": "exec",
+                    "rawValue": "exec",
+                    "comment": "clear async triggers"
+                },
+                {
+                    "id": "2",
+                    "displayValue": "dbdeletedata.bat",
+                    "rawValue": "dbdeletedata.bat",
+                    "comment": ""
+                },
+                {
+                    "id": "3",
+                    "displayValue": "%LAENVDIR%/bin",
+                    "rawValue": "%LAENVDIR%/bin",
+                    "comment": ""
+                },
+                {
+                    "id": "4",
+                    "displayValue": "-Y gen AsyncActionTrigger -f AsyncActionRequest.DataArea='lisp'",
+                    "rawValue": "-Y gen AsyncActionTrigger -f AsyncActionRequest.DataArea='lisp'",
+                    "comment": ""
+                }
+            ],
+            "rowType": "exec",
+            "businessObjectName": ""
         },
         {
             "id": "4",
-            "uniqueId": "R_1386579695870",
+            "uniqueId": "R_1687833122222",
             "cells": [
                 {
                     "id": "1",
-                    "displayValue": "context",
-                    "rawValue": "context",
+                    "displayValue": "exec",
+                    "rawValue": "exec",
                     "comment": ""
                 },
                 {
                     "id": "2",
-                    "displayValue": "context.current.date",
-                    "rawValue": "context.current.date",
+                    "displayValue": "manageasync.bat",
+                    "rawValue": "manageasync.bat",
                     "comment": ""
                 },
                 {
                     "id": "3",
-                    "displayValue": "default",
-                    "rawValue": "default",
+                    "displayValue": "%LAENVDIR%/bin",
+                    "rawValue": "%LAENVDIR%/bin",
+                    "comment": ""
+                },
+                {
+                    "id": "4",
+                    "displayValue": "--status",
+                    "rawValue": "--status",
                     "comment": ""
                 }
-            ]
+            ],
+            "rowType": "exec",
+            "businessObjectName": ""
         },
         {
             "id": "5",
-            "uniqueId": "R_1386579695871",
+            "uniqueId": "R_1679495171385",
             "cells": [
                 {
                     "id": "1",
-                    "displayValue": "context",
-                    "rawValue": "context",
-                    "comment": ""
+                    "displayValue": "LottoGame",
+                    "rawValue": "LottoGame",
+                    "comment": "Create 3 games and delete the 3rd, purge the 2nd and update the 1st. The expectation is, LG1 record gets updated with MaxNum 49 while LG2 is permanently deleted and LG3 is only soft deleted"
                 },
                 {
                     "id": "2",
-                    "displayValue": "context.isbatch",
-                    "rawValue": "context.isbatch",
+                    "displayValue": "",
+                    "rawValue": "",
                     "comment": ""
                 },
                 {
                     "id": "3",
-                    "displayValue": "default",
-                    "rawValue": "default",
+                    "displayValue": "",
+                    "rawValue": "",
+                    "comment": ""
+                },
+                {
+                    "id": "4",
+                    "displayValue": "LottoGame",
+                    "rawValue": "LottoGame",
+                    "comment": ""
+                },
+                {
+                    "id": "5",
+                    "displayValue": "MaxNum",
+                    "rawValue": "MaxNum",
+                    "comment": ""
+                },
+                {
+                    "id": "6",
+                    "displayValue": "Type",
+                    "rawValue": "Type",
                     "comment": ""
                 }
-            ]
+            ],
+            "rowType": "business_object",
+            "businessObjectName": "LottoGame"
         },
         {
             "id": "6",
-            "uniqueId": "R_1386579695866",
+            "uniqueId": "R_1679495171522",
             "cells": [
                 {
                     "id": "1",
-                    "displayValue": "context",
-                    "rawValue": "context",
+                    "displayValue": "",
+                    "rawValue": "",
                     "comment": ""
                 },
                 {
                     "id": "2",
-                    "displayValue": "context.asofdate",
-                    "rawValue": "context.asofdate",
+                    "displayValue": "Create",
+                    "rawValue": "Create",
                     "comment": ""
                 },
                 {
                     "id": "3",
-                    "displayValue": "default",
-                    "rawValue": "default",
+                    "displayValue": "",
+                    "rawValue": "",
+                    "comment": ""
+                },
+                {
+                    "id": "4",
+                    "displayValue": "6D045",
+                    "rawValue": "6D045",
+                    "comment": ""
+                },
+                {
+                    "id": "5",
+                    "displayValue": "45",
+                    "rawValue": "45",
+                    "comment": ""
+                },
+                {
+                    "id": "6",
+                    "displayValue": "SixDigit",
+                    "rawValue": "SixDigit",
                     "comment": ""
                 }
-            ]
+            ],
+            "rowType": "action",
+            "businessObjectName": "LottoGame"
         },
         {
             "id": "7",
-            "uniqueId": "R_1386575753599",
+            "uniqueId": "R_1679495171523",
             "cells": [
                 {
                     "id": "1",
-                    "displayValue": "// Bank",
-                    "rawValue": "// Bank",
+                    "displayValue": "",
+                    "rawValue": "",
+                    "comment": ""
+                },
+                {
+                    "id": "2",
+                    "displayValue": "Create",
+                    "rawValue": "Create",
+                    "comment": ""
+                },
+                {
+                    "id": "3",
+                    "displayValue": "",
+                    "rawValue": "",
+                    "comment": ""
+                },
+                {
+                    "id": "4",
+                    "displayValue": "5D042",
+                    "rawValue": "5D042",
+                    "comment": ""
+                },
+                {
+                    "id": "5",
+                    "displayValue": "42",
+                    "rawValue": "42",
+                    "comment": ""
+                },
+                {
+                    "id": "6",
+                    "displayValue": "FiveDigit",
+                    "rawValue": "FiveDigit",
                     "comment": ""
                 }
-            ]
+            ],
+            "rowType": "action",
+            "businessObjectName": "LottoGame"
         },
         {
             "id": "8",
-            "uniqueId": "R_1386575753600",
+            "uniqueId": "R_1679495171524",
             "cells": [
                 {
                     "id": "1",
-                    "displayValue": "BusClassA",
-                    "rawValue": "BusClassA",
+                    "displayValue": "",
+                    "rawValue": "",
                     "comment": ""
                 },
                 {
                     "id": "2",
-                    "displayValue": "",
-                    "rawValue": "",
+                    "displayValue": "Create",
+                    "rawValue": "Create",
                     "comment": ""
                 },
                 {
@@ -158,27 +280,29 @@
                 },
                 {
                     "id": "4",
-                    "displayValue": "EnterpriseGroup",
-                    "rawValue": "EnterpriseGroup",
+                    "displayValue": "4D058",
+                    "rawValue": "4D058",
                     "comment": ""
                 },
                 {
                     "id": "5",
-                    "displayValue": "BusClassA",
-                    "rawValue": "BusClassA",
+                    "displayValue": "58",
+                    "rawValue": "58",
                     "comment": ""
                 },
                 {
                     "id": "6",
-                    "displayValue": "Name",
-                    "rawValue": "Name",
+                    "displayValue": "FourDigit",
+                    "rawValue": "FourDigit",
                     "comment": ""
                 }
-            ]
+            ],
+            "rowType": "action",
+            "businessObjectName": "LottoGame"
         },
         {
             "id": "9",
-            "uniqueId": "R_1386579707415",
+            "uniqueId": "R_1680177183252",
             "cells": [
                 {
                     "id": "1",
@@ -188,8 +312,8 @@
                 },
                 {
                     "id": "2",
-                    "displayValue": "Create",
-                    "rawValue": "Create",
+                    "displayValue": "Delete",
+                    "rawValue": "Delete",
                     "comment": ""
                 },
                 {
@@ -200,27 +324,29 @@
                 },
                 {
                     "id": "4",
-                    "displayValue": "1000",
-                    "rawValue": "1000",
+                    "displayValue": "4D058",
+                    "rawValue": "4D058",
                     "comment": ""
                 },
                 {
                     "id": "5",
-                    "displayValue": "1100",
-                    "rawValue": "1100",
+                    "displayValue": "58",
+                    "rawValue": "58",
                     "comment": ""
                 },
                 {
                     "id": "6",
-                    "displayValue": "Wells Fargo",
-                    "rawValue": "Wells Fargo",
+                    "displayValue": "FourDigit",
+                    "rawValue": "FourDigit",
                     "comment": ""
                 }
-            ]
+            ],
+            "rowType": "action",
+            "businessObjectName": "LottoGame"
         },
         {
             "id": "10",
-            "uniqueId": "R_1386579707416",
+            "uniqueId": "R_1680177183256",
             "cells": [
                 {
                     "id": "1",
@@ -230,8 +356,8 @@
                 },
                 {
                     "id": "2",
-                    "displayValue": "Create",
-                    "rawValue": "Create",
+                    "displayValue": "Purge",
+                    "rawValue": "Purge",
                     "comment": ""
                 },
                 {
@@ -242,27 +368,29 @@
                 },
                 {
                     "id": "4",
-                    "displayValue": "1000",
-                    "rawValue": "1000",
+                    "displayValue": "5D042",
+                    "rawValue": "5D042",
                     "comment": ""
                 },
                 {
                     "id": "5",
-                    "displayValue": "1200",
-                    "rawValue": "1200",
+                    "displayValue": "42",
+                    "rawValue": "42",
                     "comment": ""
                 },
                 {
                     "id": "6",
-                    "displayValue": "BOA",
-                    "rawValue": "BOA",
+                    "displayValue": "FiveDigit",
+                    "rawValue": "FiveDigit",
                     "comment": ""
                 }
-            ]
+            ],
+            "rowType": "action",
+            "businessObjectName": "LottoGame"
         },
         {
             "id": "11",
-            "uniqueId": "R_1386579707417",
+            "uniqueId": "R_1680177183260",
             "cells": [
                 {
                     "id": "1",
@@ -272,8 +400,8 @@
                 },
                 {
                     "id": "2",
-                    "displayValue": "Create",
-                    "rawValue": "Create",
+                    "displayValue": "Update",
+                    "rawValue": "Update",
                     "comment": ""
                 },
                 {
@@ -284,325 +412,63 @@
                 },
                 {
                     "id": "4",
-                    "displayValue": "1000",
-                    "rawValue": "1000",
+                    "displayValue": "6D045",
+                    "rawValue": "6D045",
                     "comment": ""
                 },
                 {
                     "id": "5",
-                    "displayValue": "1300",
-                    "rawValue": "1300",
+                    "displayValue": "49",
+                    "rawValue": "49",
                     "comment": ""
                 },
                 {
                     "id": "6",
-                    "displayValue": "TCF",
-                    "rawValue": "TCF",
+                    "displayValue": "SixDigit",
+                    "rawValue": "SixDigit",
                     "comment": ""
                 }
-            ]
+            ],
+            "rowType": "action",
+            "businessObjectName": "LottoGame"
         },
         {
             "id": "12",
-            "uniqueId": "R_1386579707418",
-            "cells": []
-        },
-        {
-            "id": "13",
-            "uniqueId": "R_1386579707419",
+            "uniqueId": "R_1679495171270",
             "cells": [
                 {
                     "id": "1",
-                    "displayValue": "",
-                    "rawValue": "",
+                    "displayValue": "//End of sheet 1",
+                    "rawValue": "//End of sheet 1",
                     "comment": ""
                 },
                 {
                     "id": "2",
-                    "displayValue": "Create",
-                    "rawValue": "Create",
+                    "displayValue": "//------------",
+                    "rawValue": "//------------",
                     "comment": ""
                 },
                 {
                     "id": "3",
-                    "displayValue": "",
-                    "rawValue": "",
+                    "displayValue": "//------------",
+                    "rawValue": "//------------",
                     "comment": ""
                 },
                 {
                     "id": "4",
-                    "displayValue": "2000",
-                    "rawValue": "2000",
+                    "displayValue": "//------------",
+                    "rawValue": "//------------",
                     "comment": ""
                 },
                 {
                     "id": "5",
-                    "displayValue": "2100",
-                    "rawValue": "2100",
-                    "comment": ""
-                },
-                {
-                    "id": "6",
-                    "displayValue": "Wells Fargo",
-                    "rawValue": "Wells Fargo",
+                    "displayValue": "//------------",
+                    "rawValue": "//------------",
                     "comment": ""
                 }
-            ]
-        },
-        {
-            "id": "14",
-            "uniqueId": "R_1386579707420",
-            "cells": [
-                {
-                    "id": "1",
-                    "displayValue": "",
-                    "rawValue": "",
-                    "comment": ""
-                },
-                {
-                    "id": "2",
-                    "displayValue": "Create",
-                    "rawValue": "Create",
-                    "comment": ""
-                },
-                {
-                    "id": "3",
-                    "displayValue": "",
-                    "rawValue": "",
-                    "comment": ""
-                },
-                {
-                    "id": "4",
-                    "displayValue": "2000",
-                    "rawValue": "2000",
-                    "comment": ""
-                },
-                {
-                    "id": "5",
-                    "displayValue": "2200",
-                    "rawValue": "2200",
-                    "comment": ""
-                },
-                {
-                    "id": "6",
-                    "displayValue": "BOA",
-                    "rawValue": "BOA",
-                    "comment": ""
-                }
-            ]
-        },
-        {
-            "id": "15",
-            "uniqueId": "R_1386579707421",
-            "cells": [
-                {
-                    "id": "1",
-                    "displayValue": "",
-                    "rawValue": "",
-                    "comment": ""
-                },
-                {
-                    "id": "2",
-                    "displayValue": "Create",
-                    "rawValue": "Create",
-                    "comment": ""
-                },
-                {
-                    "id": "3",
-                    "displayValue": "",
-                    "rawValue": "",
-                    "comment": ""
-                },
-                {
-                    "id": "4",
-                    "displayValue": "2000",
-                    "rawValue": "2000",
-                    "comment": ""
-                },
-                {
-                    "id": "5",
-                    "displayValue": "2300",
-                    "rawValue": "2300",
-                    "comment": ""
-                },
-                {
-                    "id": "6",
-                    "displayValue": "TCF",
-                    "rawValue": "TCF",
-                    "comment": ""
-                }
-            ]
-        },
-        {
-            "id": "16",
-            "uniqueId": "R_1386579707422",
-            "cells": []
-        },
-        {
-            "id": "17",
-            "uniqueId": "R_1386579707423",
-            "cells": [
-                {
-                    "id": "1",
-                    "displayValue": "",
-                    "rawValue": "",
-                    "comment": ""
-                },
-                {
-                    "id": "2",
-                    "displayValue": "Create",
-                    "rawValue": "Create",
-                    "comment": ""
-                },
-                {
-                    "id": "3",
-                    "displayValue": "",
-                    "rawValue": "",
-                    "comment": ""
-                },
-                {
-                    "id": "4",
-                    "displayValue": "3000",
-                    "rawValue": "3000",
-                    "comment": ""
-                },
-                {
-                    "id": "5",
-                    "displayValue": "3100",
-                    "rawValue": "3100",
-                    "comment": ""
-                },
-                {
-                    "id": "6",
-                    "displayValue": "Wells Fargo",
-                    "rawValue": "Wells Fargo",
-                    "comment": ""
-                }
-            ]
-        },
-        {
-            "id": "18",
-            "uniqueId": "R_1386579707424",
-            "cells": [
-                {
-                    "id": "1",
-                    "displayValue": "",
-                    "rawValue": "",
-                    "comment": ""
-                },
-                {
-                    "id": "2",
-                    "displayValue": "Create",
-                    "rawValue": "Create",
-                    "comment": ""
-                },
-                {
-                    "id": "3",
-                    "displayValue": "",
-                    "rawValue": "",
-                    "comment": ""
-                },
-                {
-                    "id": "4",
-                    "displayValue": "3000",
-                    "rawValue": "3000",
-                    "comment": ""
-                },
-                {
-                    "id": "5",
-                    "displayValue": "3200",
-                    "rawValue": "3200",
-                    "comment": ""
-                },
-                {
-                    "id": "6",
-                    "displayValue": "BOA",
-                    "rawValue": "BOA",
-                    "comment": ""
-                }
-            ]
-        },
-        {
-            "id": "19",
-            "uniqueId": "R_1386579707425",
-            "cells": [
-                {
-                    "id": "1",
-                    "displayValue": "",
-                    "rawValue": "",
-                    "comment": ""
-                },
-                {
-                    "id": "2",
-                    "displayValue": "Create",
-                    "rawValue": "Create",
-                    "comment": ""
-                },
-                {
-                    "id": "3",
-                    "displayValue": "",
-                    "rawValue": "",
-                    "comment": ""
-                },
-                {
-                    "id": "4",
-                    "displayValue": "3000",
-                    "rawValue": "3000",
-                    "comment": ""
-                },
-                {
-                    "id": "5",
-                    "displayValue": "3300",
-                    "rawValue": "3300",
-                    "comment": ""
-                },
-                {
-                    "id": "6",
-                    "displayValue": "TCF",
-                    "rawValue": "TCF",
-                    "comment": ""
-                }
-            ]
-        },
-        {
-            "id": "20",
-            "uniqueId": "R_1386579707426",
-            "cells": []
-        },
-        {
-            "id": "21",
-            "uniqueId": "R_1386575753886",
-            "cells": [
-                {
-                    "id": "1",
-                    "displayValue": "//End of sheet BusClassA",
-                    "rawValue": "//End of sheet BusClassA",
-                    "comment": ""
-                },
-                {
-                    "id": "2",
-                    "displayValue": "//--",
-                    "rawValue": "//--",
-                    "comment": ""
-                },
-                {
-                    "id": "3",
-                    "displayValue": "//--",
-                    "rawValue": "//--",
-                    "comment": ""
-                },
-                {
-                    "id": "4",
-                    "displayValue": "//--",
-                    "rawValue": "//--",
-                    "comment": ""
-                }
-            ]
-        },
-        {
-            "id": "22",
-            "uniqueId": "R_1386575783729",
-            "cells": []
+            ],
+            "rowType": "comment",
+            "businessObjectName": "LottoGame"
         }
     ],
     "maxColumn": 6
