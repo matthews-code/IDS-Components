@@ -28,11 +28,13 @@ export class DataGridComponent implements AfterViewInit, OnInit {
     // const formattedData = [];
     const aUnicode = 97;
     // get max number of columns to push in data grid component
-    for (let row of unformattedJson.rows) {
-      if (row.cells.length > this.maxObjectsInCell) {
-        this.maxObjectsInCell = row.cells.length;
-      }
-    }
+    // for (let row of unformattedJson.rows) {
+    //   if (row.cells.length > this.maxObjectsInCell) {
+    //     this.maxObjectsInCell = row.cells.length;
+    //   }
+    // }
+
+    this.maxObjectsInCell = unformattedJson.maxColumn;
 
     // push all columns to datagrid columns
     for (let i = 0; i < this.maxObjectsInCell; i++) {
@@ -44,6 +46,7 @@ export class DataGridComponent implements AfterViewInit, OnInit {
         sortable: true,
         resizable: true,
         reorderable: true,
+        cssPart: (row: number) => (row === 4 ? 'header-cell' : ''),
         // editor: {
         //   type: 'input',
         //   inline: true,

@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "sme": "ng build --source-map=true --named-chunks==true && source-map-explorer dist/wc-sandbox/**/*.js"
   },
   "private": true,
   "dependencies": {
@@ -26,6 +27,7 @@
     "@angular-devkit/build-angular": "^16.2.4",
     "@angular/cli": "^16.2.4",
     "@angular/compiler-cli": "^16.2.0",
+    "@ngx-builders/analyze": "^4.0.0",
     "@types/jasmine": "~4.3.0",
     "ids-enterprise-wc": "^1.0.0-beta.15",
     "jasmine-core": "~4.6.0",
@@ -34,6 +36,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "source-map-explorer": "^2.5.3",
     "typescript": "~5.1.3"
   }
 }
