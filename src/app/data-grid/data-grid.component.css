@@ -1,7 +1,29 @@
-ids-data-grid::part(custom-cell) {
-  background-color: #00ff0d;
+ids-data-grid::part(exec-cell) {
+  background-color: #808080;
+  font-weight: bold;
+  color: #ffff00;
 }
 
-ids-data-grid::part(header-cell) {
-  background-color: #48fff6;
+ids-data-grid::part(context-cell) {
+  background-color: #ffff00;
+  font-weight: bold;
 }
+
+ids-data-grid::part(business-object-cell) {
+  background-color: #00ffff;
+}
+
+ids-data-grid::part(valid-cell) {
+  background-color: #00ff00;
+}
+
+ids-data-grid::part(invalid-cell) {
+  background-color: #ff0000;
+}
+
+ids-data-grid::part(white-cell) {
+  background-color: #ffffff;
+}
+/* ids-data-grid::part(header-cell) {
+  background-color: #48fff6;
+} */

@@ -25,8 +25,8 @@ export class DataGridComponent implements AfterViewInit, OnInit {
   maxObjectsInCell = 0;
 
   ngOnInit(): void {
-    // const formattedData = [];
     const aUnicode = 97;
+
     // get max number of columns to push in data grid component
     // for (let row of unformattedJson.rows) {
     //   if (row.cells.length > this.maxObjectsInCell) {
@@ -46,7 +46,33 @@ export class DataGridComponent implements AfterViewInit, OnInit {
         sortable: true,
         resizable: true,
         reorderable: true,
-        cssPart: (row: number) => (row === 4 ? 'header-cell' : ''),
+
+        cssPart: (row: number, cellIndex: number) => {
+          switch (unformattedJson.rows[row].rowType) {
+            case 'exec':
+              return 'exec-cell';
+            case 'context':
+              return 'context-cell';
+            case 'business_object':
+              return 'business-object-cell';
+            case 'action':
+              if (cellIndex === 3) {
+                if (
+                  unformattedJson.rows[row].cells[cellIndex - 1].displayValue
+                    .length === 0
+                ) {
+                  return 'valid-cell';
+                } else {
+                  return 'invalid-cell';
+                }
+              } else {
+                return 'white-cell';
+              }
+            default:
+              return 'white-cell';
+          }
+        },
+
         // editor: {
         //   type: 'input',
         //   inline: true,
