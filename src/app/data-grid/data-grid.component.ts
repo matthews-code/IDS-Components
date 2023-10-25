@@ -22,22 +22,17 @@ export class DataGridComponent implements AfterViewInit, OnInit {
   columns: IdsDataGridColumn[] = [];
   formattedData: { [key: string]: any }[] = [];
 
-  maxObjectsInCell = 0;
+  maxColumn = 0;
 
   ngOnInit(): void {
     const aUnicode = 97;
+    const emptyCellIndex: number[] = unformattedJson.rows.map((row) => {
+      return row.cells.length;
+    });
 
-    // get max number of columns to push in data grid component
-    // for (let row of unformattedJson.rows) {
-    //   if (row.cells.length > this.maxObjectsInCell) {
-    //     this.maxObjectsInCell = row.cells.length;
-    //   }
-    // }
+    this.maxColumn = unformattedJson.maxColumn;
 
-    this.maxObjectsInCell = unformattedJson.maxColumn;
-
-    // push all columns to datagrid columns
-    for (let i = 0; i < this.maxObjectsInCell; i++) {
+    for (let i = 0; i < this.maxColumn; i++) {
       let text = String.fromCharCode(i + aUnicode);
       this.columns.push({
         id: text,
@@ -46,8 +41,10 @@ export class DataGridComponent implements AfterViewInit, OnInit {
         sortable: true,
         resizable: true,
         reorderable: true,
-
         cssPart: (row: number, cellIndex: number) => {
+          if (cellIndex > emptyCellIndex[row]) {
+            return 'white-cell';
+          }
           switch (unformattedJson.rows[row].rowType) {
             case 'exec':
               return 'exec-cell';
