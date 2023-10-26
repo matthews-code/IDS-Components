@@ -7,5 +7,5 @@ import 'ids-enterprise-wc/enterprise-wc.js';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'wc-sandbox';
+  title = 'bltwebeditor';
 }
