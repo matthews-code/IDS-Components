@@ -18,7 +18,7 @@ ids-data-grid::part(valid-cell) {
 }
 
 ids-data-grid::part(invalid-cell) {
-  background-color: #ff0000;
+  background-color: #ff3838;
 }
 
 ids-data-grid::part(white-cell) {

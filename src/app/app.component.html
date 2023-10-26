@@ -1,1 +1,17 @@
-<app-data-grid></app-data-grid>
+<!-- <app-tree></app-tree>
+<app-data-grid></app-data-grid> -->
+<ids-layout-flex gap="32">
+  <ids-layout-flex-item>
+    <ids-layout-flex direction="column" gap="32">
+      <ids-layout-flex-item>
+        <app-tree></app-tree>
+      </ids-layout-flex-item>
+      <ids-layout-flex-item>
+        <app-swappable-tabs></app-swappable-tabs>
+      </ids-layout-flex-item>
+    </ids-layout-flex>
+  </ids-layout-flex-item>
+  <ids-layout-flex-item>
+    <app-data-grid></app-data-grid>
+  </ids-layout-flex-item>
+</ids-layout-flex>

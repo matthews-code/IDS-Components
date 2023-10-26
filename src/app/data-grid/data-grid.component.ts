@@ -60,6 +60,7 @@ export class DataGridComponent implements AfterViewInit, OnInit {
                 ) {
                   return 'valid-cell';
                 } else {
+                  // console.log('reached');
                   return 'invalid-cell';
                 }
               } else {
@@ -86,7 +87,7 @@ export class DataGridComponent implements AfterViewInit, OnInit {
       let formattedRow: { [key: string]: any } = {};
       for (let cell of row.cells) {
         formattedRow[String.fromCharCode(Number(cell.id) - 1 + aUnicode)] =
-          cell.displayValue;
+          cell.rawValue;
       }
       this.formattedData.push(formattedRow);
     }
